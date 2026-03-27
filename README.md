@@ -104,7 +104,7 @@ Your conversations, ideas, and data never leave your server. Perfect for:
 
 ### One-Line Installation
 ```bash
-curl -fsSL https://raw.githubusercontent.com/vikrant-project/ai-agent-offline/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/vikrantproject/ai-agent-offline/main/install.sh | sudo bash
 ```
 
 That's it! Access your agent at `http://your-server:7778`
@@ -123,7 +123,7 @@ That's it! Access your agent at `http://your-server:7778`
 
 ```bash
 # Download and run installer
-wget https://raw.githubusercontent.com/vikrant-project/ai-agent-offline/main/install.sh
+wget https://raw.githubusercontent.com/vikrantproject/ai-agent-offline/main/install.sh
 chmod +x install.sh
 sudo ./install.sh
 ```
@@ -151,7 +151,7 @@ sudo systemctl start ollama
 ollama pull llama3
 
 # 4. Clone and setup
-git clone https://github.com/vikrant-project/ai-agent-offline.git
+git clone https://github.com/vikrantproject/ai-agent-offline.git
 cd ai-agent-offline
 npm install --production
 
@@ -464,8 +464,8 @@ MIT License - feel free to use for personal or commercial projects.
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/vikrant-project/ai-agent-offline/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/vikrant-project/ai-agent-offline/discussions)
+- **Issues**: [GitHub Issues](https://github.com/vikrantproject/ai-agent-offline/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/vikrantproject/ai-agent-offline/discussions)
 
 ---
 
