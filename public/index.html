@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude - AI Assistant</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">C</div>
+          <div class="logo-text">
+            <div class="logo-title">Claude</div>
+            <div class="logo-subtitle" id="modelName">llama3</div>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" data-testid="theme-toggle-btn" title="Toggle theme">
+          <svg class="icon-sun" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="4"/><path d="M10 1v2M10 17v2M3.93 3.93l1.41 1.41M14.66 14.66l1.41 1.41M1 10h2M17 10h2M3.93 16.07l1.41-1.41M14.66 5.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+
+      <button class="new-chat-btn" id="newChatBtn" data-testid="new-chat-btn">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        New Chat
+      </button>
+
+      <div class="conversation-list" id="conversationList" data-testid="conversation-list">
+        <!-- Conversations will be populated here -->
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState">
+        <div class="empty-logo">C</div>
+        <h1 class="empty-title">How can I help you?</h1>
+        <p class="empty-subtitle">Ask me anything. I'm Claude, your AI assistant.</p>
+      </div>
+
+      <!-- Messages Container -->
+      <div class="messages-container" id="messagesContainer" data-testid="messages-container">
+        <!-- Messages will be populated here -->
+      </div>
+
+      <!-- Input Area -->
+      <div class="input-container">
+        <div class="input-wrapper">
+          <textarea 
+            id="messageInput" 
+            data-testid="message-input"
+            class="message-input" 
+            placeholder="Type your message..." 
+            rows="1"
+          ></textarea>
+          <div class="input-actions">
+            <button class="stop-btn hidden" id="stopBtn" data-testid="stop-btn" title="Stop generating">
+              <svg width="20" height="20" fill="currentColor"><rect x="6" y="6" width="8" height="8" rx="1"/></svg>
+            </button>
+            <button class="send-btn" id="sendBtn" data-testid="send-btn" title="Send message">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

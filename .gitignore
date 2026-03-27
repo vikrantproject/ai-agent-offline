@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+yarn-error.log
+npm-debug.log
+package-lock.json
+
+# Database files
+database/*.db
+database/*.db-shm
+database/*.db-wal
+
+# Logs
+*.log
+logs/
+
+# Environment (keep template)
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Not needed in repo
+backend/
+frontend/
+.emergent/
+memory/
+test_reports/
+tests/
+test_result.md
